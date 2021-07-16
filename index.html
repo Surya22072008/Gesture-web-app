@@ -1,0 +1,111 @@
+ 
+<html>
+    <head>
+      <title>Gesture web app</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+  <h3 class="btn btn-info heading">Gesture web app
+    <br>
+    <span>&#128076;</span>
+      <span>&#128077;</span>
+      <span>&#9996;</span>
+      <span>&#9994;</span>
+      <span>&#128079;</span>
+      <span>&#129304;</span>
+      </h3>
+        <br><br>
+  
+        <p style="font-size: 22px;">Take a selfie of a gesture to know about it
+           
+        </p>
+        <p style="font-size: 18px;">Take a selfie of these gesture to know more about them
+        </p>
+            <p style="font-size: 30px;"> &#128076; | &#128077; | &#9996;</p>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Webcam view - </label>
+          <div id="camera"></div>
+          <br><br>
+  <button onclick="take-snapshot()" class="btn btn-danger">Capture Image</button>
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction 1 - </label>
+          <p class="gesture_name" id="result_gesture_name"></p>
+          <p class="gesture_icon" id="update_gesture_icon"></p>
+  
+          <label>Prediction 2 - </label>
+          <p class="gesture_name" id="result_gesture_name2"></p>
+          <p class="gesture_icon" id="update_gesture_icon2"></p>
+          </div>
+          
+        <div class="col-md-4 col-sm-12 col-xs-12">   
+        <label>Snapshot - </label>
+        <div id="result">
+        </div>
+        <br><br>
+        <button class="btn btn-success" onclick="check()">Predict Emotion</button>
+          </div>
+      </center>
+  
+    </div>
+  <style>
+    body
+{
+  color: white;
+  background: #35f227;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_gesture_name ,#result_gesture_name2  
+{
+  color: black;
+}
+.gesture_name
+{
+  font-size: 40px;
+}
+.gesture_icon
+{
+  font-size:48px;
+}
+.heading{
+  font-size: 18px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}  
+  </style>
+  <script >
+function take_snapshot() {
+
+}
+function check() {
+    
+}
+  </script>
+  
+    </body>
+  </html>
+  
+   
